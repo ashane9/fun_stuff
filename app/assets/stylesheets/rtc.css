@@ -16,6 +16,16 @@
     color: #9ebad1;
 }
 
+.default-text{
+    font-size: .8vw;
+}
+
+#card-header{
+    padding-top: .5%;
+    padding-bottom: 0;
+    font-size: 1.2vw;
+}
+
 .full-width{
   position: relative;
   width: 98%;
@@ -46,12 +56,18 @@
     text-align: left;
 }
 
-#summary {
-  width: 7.5%;
+.summary-label {
+    float: left;
+    padding-top: .2%;
+    padding-right: .5%;
 }
 
-#summary-text {
-  width: 80%;
+.summary-text {
+  width: 90%;
+}
+
+.top-padding {
+    padding-top: .5%;
 }
 
 .no-padding {
@@ -72,7 +88,15 @@
 }
 
 #card-fields{
-  width: 80%;
+  width: 90%;
+}
+
+#quick-info {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: .5%;
+    padding-right: .5%;
+    width: 10%;
 }
 
 .shrink-col{

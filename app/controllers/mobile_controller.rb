@@ -1,4 +1,5 @@
-class MobileController < RtcController
+class MobileController < ApplicationController
+  include RtcCardHandling
 
   def menu
     rtc_number = params[:number]

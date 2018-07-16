@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   # post '/menu' => 'rtc#qr_code'
   get '/rtc/:number' => 'rtc#card_details', as: :card
   get '/mobile/:number' => 'mobile#card_details', as: :mobile_card
-  post '/menu' => 'mobile#menu', as: :post_card_mobile
+  post '/menu' => 'mobile#menu', as: :post_mobile_card
   post '/rtc' => 'rtc#menu', as: :post_card
   patch '/rtc/:number' => 'rtc#update'
   patch '/mobile/:number' => 'mobile#update'

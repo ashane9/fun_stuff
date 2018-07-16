@@ -18,7 +18,7 @@
   <!--<button onclick="qrcode.decode('/assets/images/qr_code.png');">QR</button>-->
 
   <h1>Enter RTC Number</h1>
-  <%= form_with scope: @card, url: post_card_mobile_path do |form| %>
+  <%= form_with scope: @card, url: post_mobile_card_path do |form| %>
     <p>
       Number
       <%= form.text_field :number%><br>
