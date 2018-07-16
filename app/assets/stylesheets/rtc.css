@@ -63,7 +63,7 @@
 }
 
 .summary-text {
-  width: 90%;
+  width: 94.5%;
 }
 
 .top-padding {
@@ -126,4 +126,15 @@
 
 .rtc-panel {
     padding: .5%;
+}
+
+.rtc-save-button{
+    color: white;
+    background-color: #8EB9DF;
+    border: 0;
+    border-radius: 8%;
+    /*padding-top: 1.5%;*/
+    /*padding-bottom: 1.5%;*/
+    /*padding-left: 6%;*/
+    /*padding-right: 6%;*/
 }

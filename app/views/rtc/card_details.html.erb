@@ -14,9 +14,11 @@
               <%= @card.number %>
             </p>
           </div>
-          <div class="col-md-3 text-right">
-            <%= image_tag "icons.PNG", class: 'img-responsive', style: 'float: left' %>
-            <%= form.submit 'Save' %>
+          <div class="col-md-3" style="float: right">
+            <div class="text-left no-padding" style="float: right">
+            <%= image_tag "icons.PNG", class: 'img-responsive', style: 'float: left'%>
+            <%= form.submit 'Save', class: 'rtc-save-button'%>
+          </div>
           </div>
         </div>
         <div class="row text-left">
@@ -26,8 +28,8 @@
             </div>
             <%= form.text_field :summary, placeholder: @card.summary, class: 'summary-text' %>
           </div>
-          <div class="col-md-1">
-            <%= form.select :status, options_for_select(['New', 'Begin Analysis', 'Start Working', 'Set Done'], selected: @card.status) %>
+          <div class="col-md-1" style="padding-left: 0;">
+            <%= form.select :status, options_for_select(['New', 'Begin Analysis', 'Start Working', 'Set Done'], selected: @card.status), {}, class: 'full-width' %>
           </div>
         </div>
       </div>
