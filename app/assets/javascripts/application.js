@@ -35,5 +35,4 @@
 //= require findpat
 //= require alignpat
 //= require databr
-//= require bootstrap-filestyle.min.js
 //= require mobile-qr-handling
