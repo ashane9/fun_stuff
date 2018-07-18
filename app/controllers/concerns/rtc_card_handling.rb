@@ -10,6 +10,8 @@ module RtcCardHandling
     if @card.update_attributes(card_params)
       flash[:success] = 'Changes were successfully saved.'
       redirect_to @card
+    else
+      render 'card_details'
     end
   end
 

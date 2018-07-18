@@ -1,5 +1,6 @@
 class MobileController < ApplicationController
   include RtcCardHandling
+  protect_from_forgery with: :null_session
 
   def menu
     rtc_number = params[:number]
