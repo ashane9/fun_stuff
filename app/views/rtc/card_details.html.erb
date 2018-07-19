@@ -1,5 +1,5 @@
 <div class="default-text">
-  <%= form_with model: @card do |form| %>
+  <%= form_with model: @card, url: patch_card_path do |form| %>
     <div class="col-md-1 no-padding shrink-col">
       <%= image_tag "widget.PNG", class: 'img-responsive' %>
     </div>

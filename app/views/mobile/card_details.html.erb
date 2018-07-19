@@ -4,7 +4,7 @@
     <div class="alert alert-<%= key %>"><%= value %></div>
   <% end %>
 
-  <%= form_with model: @card do |form| %>
+  <%= form_with model: @card, url: patch_mobile_card_path do |form| %>
     <p>
       Number: <%= form.label @card.number %><br><br>
       Status: <%= form.select :status, options_for_select(['New','Begin Analysis','Start Working','Set Done'], selected: @card.status) %><br><br>
